@@ -1,0 +1,45 @@
+{
+  "name": "dsh-apple-display",
+  "version": "0.1.0",
+  "description": "Control Apple Studio Display / Pro Display XDR brightness from DeepSeek Harness on Windows.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml",
+    "python/appledisplay.py",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "apple",
+    "studio-display",
+    "pro-display-xdr",
+    "brightness"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mycroft-sherlock/apple-display.git"
+  },
+  "homepage": "https://github.com/mycroft-sherlock/apple-display#readme",
+  "bugs": {
+    "url": "https://github.com/mycroft-sherlock/apple-display/issues"
+  }
+}
